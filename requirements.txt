@@ -1,1 +1,7 @@
 bob-builder==0.0.5
+
+# Add requirements that will trigger install of libffi/gdal/libmemcached
+cffi
+# Newer versions are broken even with the existing buildpack
+GDAL==1.9.1
+pylibmc
